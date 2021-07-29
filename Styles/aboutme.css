@@ -1,0 +1,49 @@
+/*familia de fuentes: 'Cinzel',
+serif;
+familia de fuentes: 'DM Serif Display',
+serif;
+familia de fuentes: 'Josefin Slab',
+serif;
+familia de fuentes: 'Montserrat',
+sans-serif;
+familia de fuentes: 'Open Sans Condensed',
+sans-serif;
+familia de fuentes: 'Playfair Display SC',
+serif;
+familia de fuentes: 'Raleway',
+sans-serif;*/
+*{
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat'';
+}
+a{
+    text-decoration: none;
+    color: black;
+}
+
+body{
+    background-color: black;
+}
+
+header{
+    
+    font-size: large;
+    color: black;
+}
+.navbar{
+    height: 100px;
+}
+.navbar>div>.navtitle{
+    text-align: center;
+    margin-left: 50px;
+    font-size: 70px;
+    font-family:"DM Serif Display" ;
+}
+#navbarSupportedContent{
+    margin-right: 40px;
+    margin-left: 25px;
+}
+#navbarSupportedContent >ul >li{
+    margin-left: 25px;
+}

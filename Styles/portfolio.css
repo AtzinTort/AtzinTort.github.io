@@ -1,0 +1,366 @@
+/*familia de fuentes: 'Cinzel',
+serif;
+familia de fuentes: 'DM Serif Display',
+serif;
+familia de fuentes: 'Josefin Slab',
+serif;
+familia de fuentes: 'Montserrat',
+sans-serif;
+familia de fuentes: 'Open Sans Condensed',
+sans-serif;
+familia de fuentes: 'Playfair Display SC',
+serif;
+familia de fuentes: 'Raleway',
+sans-serif;*/
+
+* {
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Montserrat';
+}
+
+a {
+    text-decoration: none;
+    color: black;
+}
+
+html>body {
+    background-color: rgb(252, 252, 237);
+    ;
+}
+
+section {
+    background-color: rgb(252, 252, 237);
+}
+
+header {
+    font-size: large;
+    color: black;
+}
+
+.navbar {
+    height: 100px;
+    box-shadow: 0px 0px 5px #492d17;
+    color: white;
+}
+
+.navbar>div>.navtitle {
+    text-align: center;
+    margin-left: 50px;
+    font-size: 70px;
+    font-family: "DM Serif Display";
+    transition: all 0.5s;
+}
+
+.navbar>div>.navtitle:hover {
+    transform: scale(0.9);
+    transition: all 0.5s;
+}
+
+.navBarritas {
+    height: 100px;
+    background-color: antiquewhite;
+}
+
+#navbarSupportedContent {
+    margin-right: 40px;
+    margin-left: 25px;
+}
+
+#navbarSupportedContent>ul>li {
+    margin-left: 25px;
+}
+
+#navbarSupportedContent a {
+    color: #492d17;
+    font-weight: bolder;
+}
+
+#navbarSupportedContent a:hover {
+    color: #d1a223;
+}
+
+
+div>.navbar-toggler:focus{
+    outline: none;
+    box-shadow: none;
+    box-shadow: 0 0 9px #be9420;
+}
+
+
+ul .dropdown-item:hover {
+    background-color: #d3d2d28e;
+}
+
+/*Aqui empieza el portafolio*/
+
+.buscador {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-top: 30px;
+}
+
+.buscador>div>.form-control:focus {
+    border-color: #d1a223;
+    box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px #d1a323;
+}
+
+div>.input-group {
+    width: 50%;
+    text-align: center;
+    border-radius: 100px;
+}
+
+.categorias {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin-bottom: 10px;
+    margin-top: 0px;
+}
+
+.categorias>div>div>.nav-link {
+    color: #492d17;
+    margin: 15px auto;
+    font-size: large;
+    transition: all 0.5s;
+}
+
+.categorias>div>div>.nav-link.activo {
+    color: #d1a223;
+    font-weight: 900;
+    transition: all 0.5s;
+}
+
+/*Aqui empieza el portfolio*/
+
+#portfolio {
+    width: 80%;
+    background-color: rgb(252, 252, 237);
+    ;
+}
+
+#galeriamargen {
+    margin-bottom: 2px;
+    padding-left: 4px;
+    padding-right: 4px;
+    margin-left: 0px;
+    margin-right: 0px;
+}
+
+#idGeneral {
+    width: 70%;
+    opacity: 0;
+    transition: opacity 0.5s linear;
+}
+
+.galerias {
+    position: relative;
+    width: 100%;
+}
+
+.galerias .item {
+    position: absolute;
+    display: block;
+    padding: 0;
+    width: 33%;
+}
+
+.galerias .item>div>img {
+    width: 100%;
+}
+
+.galerias .contenido {
+    position: relative;
+}
+
+.animation {
+    transform: scale(1);
+    transition: all 0.5s;
+}
+
+.animation:hover {
+    transform: scale(0.9);
+    animation-delay: .5s;
+    cursor: pointer;
+}
+
+/*DISEÑO DE OVERLAY*/
+
+.overlay {
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: #0e0805cb;
+    -webkit-backdrop-filter: blur(15px);
+    backdrop-filter: blur(15px);
+    width: 100%;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.activado {
+    display: flex;
+    transition: all 0.5s;
+}
+
+.overlay img {
+    max-width: 100%;
+    border-radius: 30px;
+}
+
+.overlay .descripcion {
+    color: white;
+    text-align: center;
+    font-family: 'Open Sans Condensed', sans-serif;
+    border-radius: 15px;
+    margin-top: 15px;
+}
+
+.contenedorImg {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 50%;
+}
+
+.imgHorizontal {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 100%;
+}
+
+.imgVertical {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    max-width: 50%;
+}
+
+.overlay #botonCerrar {
+    position: absolute;
+    right: -20px;
+    top: -20px;
+}
+
+/*---Footer*/
+
+footer p {
+    text-align: center;
+    text-decoration: none;
+}
+
+footer>div>.redes>p .author {
+    text-decoration: none;
+    color: #be9420;
+    font-weight: bolder;
+    transition: all 0.5s;
+}
+
+footer>div>.redes>p .author:hover {
+    text-decoration: none;
+    color: #492d17;
+    font-weight: bolder;
+    transition: all 0.5s;
+}
+
+footer>div>.redes>a {
+    font-size: 60px;
+    border-radius: 15px;
+    margin-right: 50px;
+    color: #492d17;
+    text-align: center;
+    transition: .5s ease all;
+}
+
+footer>div>.redes>a>i {
+    width: 100px;
+    line-height: 100px;
+    height: 100px;
+    border-radius: 100px;
+}
+
+footer>div>.redes>.instagram:hover {
+    color: rgba(193, 53, 132, 1);
+}
+
+footer>div>.redes>.facebook:hover {
+    color: #3b5998;
+    border-radius: 15px;
+}
+
+footer>div>.redes>.behance:hover {
+    color: #053eff;
+}
+
+footer>div>.redes>a>i:hover {
+    animation: icono .5s ease;
+}
+
+@keyframes icono {
+    from {
+        transform: rotate3d(0, 0, 0, 0);
+    }
+    to {
+        transform: rotate3d(0, 1, 0, 360deg);
+    }
+}
+
+/*------------RESPONSIVE--------------*/
+
+@media screen and (max-width:700px) {
+    #navbarSupportedContent {
+        margin-right: 0px;
+        margin-left: 50px;
+    }
+    .navBarritas {
+        height: 150px;
+        background-color: antiquewhite;
+    }
+    #idGeneral {
+        width: 100%;
+        margin-left: 10px;
+    }
+    .categorias>div>div>.nav-link {
+        color: #492d17;
+        margin: auto;
+        font-size: large;
+        transition: all 0.5s;
+    }
+    .animation:hover {
+        transform: scale(1);
+        transition: none;
+    }
+    #barraBusqueda {
+        display: none;
+    }
+    .galerias .item {
+        width: 50%;
+    }
+    footer>div>.redes>a {
+        font-size: 40px;
+        margin-right: 0px;
+        color: #492d17;
+    }
+
+    div> .navbar-nav .dropdown-menu{
+        position: relative;
+    }
+    .navbar>div>.navtitle:hover {
+        transform: scale(1);
+
+    }
+
+
+}
