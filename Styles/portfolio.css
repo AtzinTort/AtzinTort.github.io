@@ -25,12 +25,12 @@ a {
 }
 
 html>body {
-    background-color: rgb(252, 252, 237);
+    background-color: rgb(255, 255, 255);
     ;
 }
 
 section {
-    background-color: rgb(252, 252, 237);
+    background-color: rgb(255, 255, 255);
 }
 
 header {
@@ -140,7 +140,7 @@ div>.input-group {
 
 #portfolio {
     width: 80%;
-    background-color: rgb(252, 252, 237);
+    background-color: rgb(255, 255, 255);
     ;
 }
 
