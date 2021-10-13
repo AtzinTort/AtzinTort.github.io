@@ -1,20 +1,57 @@
-* {
-    padding: 0px;
-    margin: 0px;
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Times New Roman', Times, serif;
+    
 }
 
-p {
-    font-family: 'Montserrat';
+.sectionn{
+position: relative;
+width: 100%;
+height: 100vh;
+overflow: hidden;
+display: flex;
+justify-content: center;
+align-items: center;
 }
 
-h2 {
-    font-family: 'Open Sans Condensed';
-    ;
+.sectionn h1
+{
+    position: relative;
+    color: black ;
+    font-size: 8em;
+    text-transform: uppercase;
+    font-weight: 400;
+    z-index: 2;
+    transition: 2s;
 }
 
-a {
-    text-decoration: none;
-    color: white;
+.sectionn h1:hover{
+    color: beige;
+    filter: blur(10px);
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+.sectionn img{
+    width: 140%;
+    height: 140%;
+    top: -300px;
+    z-index: 1;
+    position: absolute;
+    pointer-events: none;
+    filter: blur(20px);
+    transition: 2s;
+}
+
+.sectionn h1:hover ~ img
+{
+    width: 100%;
+    height: 100%;
+    top: 0px; 
+    filter: blur(0px);
+
 }
 
 /*----------HEADER--------------*/
