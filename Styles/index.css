@@ -12,7 +12,8 @@ h2{
 #botonMenu{
     margin: 25px;
     position: absolute;
-    left: 1300px;
+    left: 650px;
+    width: max-content;
     z-index: 5;
 }
 
